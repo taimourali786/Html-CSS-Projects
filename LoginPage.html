@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        input{
+            margin: auto;
+            height: 30px;
+            width: 250px;
+            border-radius: 25px;
+        }
+        .lab{
+            padding-left: 100px;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 1000 ;
+        }
+
+        button{
+            margin-left: 75px;
+            margin-top: 20px;
+            height: 40px;
+            width: fit-content;
+            font-size: 20px;
+            background-color: rgb(38, 19, 165);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+        }
+        #main {
+        
+            height: 420px;
+            width: 320px;
+            top: 50%;
+            bottom: 50%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #paypal {
+            display: block;
+            height: 100px;
+            width: 200px;
+            margin: auto;
+        }
+        #login {
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+        }   
+        #form{
+            border-color: solid 2px black;
+        }
+        
+        .in{
+            margin:10px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <img src="/Html-CSS-Projects/paypal.png" alt="" id="paypal">
+        <img src="/Html-CSS-Projects/login.jpg" alt="login" id="login">
+        <h1>Login Here</h1>
+
+        <div id="form">
+            <form action="/Html-CSS-Projects/LoginPageWelcome.html" method="get" id="form1">
+                <div id="F" class="form">
+                    <label for="username" class="lab">Username</label><br>
+                    <input type="text" name="text" id="username" class="in" placeholder="Type Here">
+                </div>
+                <div id="L" class="form">
+                    <label for="pass" class="lab">Password</label><br>
+                    <input type="password" name="text" id="pass" class="in" placeholder="Type Here">
+                </div>
+            </form>
+            <button type="submit" form="form1"><strong>Let's Go!</strong></button>
+        </div>
+    </div>
+</body>
+
+</html>
