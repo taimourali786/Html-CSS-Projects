@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+
+            text-decoration: none;
+            float: left;
+            list-style: none;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+        .search {
+            float: right;
+            color: black;
+            margin: 4px;
+            margin-top: 7px;
+            margin-right: 28px;
+            width: 160px;
+            height: 15px;
+            background-color: white;
+            border-radius: 22px;
+            text-align: center;
+        }
+        .container{
+            background-color: gray;
+            height: 780px;
+            width: 500px;
+            margin: auto;
+            border-radius: 100px;
+        }
+        .container h1{
+            text-align: center;
+            padding-top: 4px;
+            font-size: 48px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container p{
+            text-align: left;
+            margin-left: 10px;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .feild{
+            margin-left: 20%;
+            width: 250px;
+            height: 30px;
+            border-radius:28px ;
+            border: 4px solid black;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            color: black;
+        }
+        .container input:hover{
+            background-color: slategray;
+        }
+        .container label{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .container button{
+            background-color: black;
+            color: white;
+            width: 110px;
+            height: 40px;
+            border-radius: 29px;
+            font-size: 15px;
+            float: right;
+            margin-right: 86px;
+            margin-top: 54px;
+        }
+        .container button:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .container label{
+            margin-left:10px ;
+            
+        }
+        .check{
+            margin-left:10px ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+                <div class="searc">
+                    <input type="text" name="search" class="search" placeholder="Search Here">
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form action="#" method="get">
+            <p>Full Name</p>
+            <input type="text" class="feild" placeholder="Enter your name here"  >
+            <p>Contact No</p>
+            <input type="text" class="feild" placeholder="Enter your Contact Number" >
+            <p>Date of Birth</p>
+            <input type="date" class="feild" >
+            <p>How was yor Experience with us!</p>
+            <input type="text" class="feild" placeholder="Type Here" >
+            <p>Do you recommend us for party?</p>
+            <label for="yes_f">Yes</label>
+            <input type="checkbox" name="check" id="yes_f" value="Yes" class="check">
+            <br>
+            <label for="no_f">No </label>
+            <input type="checkbox" name="check" id="no_f" value="No" class="check">
+            <button type="submit"> Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
