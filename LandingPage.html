@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .top-bar {
+            margin: 0px;
+            padding-left: 200px;
+            padding-right: 200px;
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .social-icons {
+            float: right;
+        }
+
+        .logo {
+            padding-top: 20px;
+            margin-left: 200px;
+            width: 1000px;
+            height: fit-content;
+            font-size: 30px;
+            font-weight: 900;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        img.logo {
+            margin: 0px;
+            margin-right: 2px;
+            max-height: 70px;
+            width: 70px;
+            padding: 0px;
+            float: left;
+        }
+
+        div.title {
+            display: inline-block;
+        }
+
+        .motto {
+            font-size: 15px;
+            margin: 0px;
+            color: gray;
+        }
+
+        .phone-details,
+        .email-det {
+            display: inline-block;
+            margin-left: 180px;
+            margin-bottom: 50px;
+            background-image: url('/Html-CSS-Projects/phone.JPG');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: 40px 40px;
+            line-height: 15px;
+
+        }
+
+        .email-det {
+            margin-left: 10px;
+
+            background-image: url('/Html-CSS-Projects/email.JPG');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: 40px 40px;
+        }
+
+        .call-us,
+        .email-us {
+
+            font-size: 15px;
+            color: gray;
+            margin-left: 40px;
+            margin-top: 30px;
+
+        }
+
+        .phone,
+        .email {
+            font-size: 20px;
+            margin-left: 40px;
+            margin-top: 0px;
+
+        }
+
+        .phone-pic {
+            margin: 2px;
+        }
+
+        .navbar {
+            width: 1000px;
+            height: 50px;
+            padding: 0px;
+
+        }
+
+        .navlist {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            height: 50px;
+        }
+
+        .navlist li {
+            list-style: none;
+            height: 50px;
+            margin: 0px;
+            width: 170px;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            background: rgba(255, 208, 0, 0.737);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        #item1,
+        #item6 {
+            background: black;
+        }
+
+        .main {
+            height: 100%;
+            background-image: url('/Html-CSS-Projects/landingpage_builders.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            opacity: 0.8;
+        }
+
+        .head {
+            font-family: 'Roboto Slab', serif;
+            font-size: 30px;
+            color: white;
+        }
+
+        .des {
+
+            font-family: 'Roboto Slab', serif;
+            font-size: 18px;
+            color: white;
+            width: 500px;
+            margin-left: 200px;
+            margin-top: 200px;
+            margin-right: 10px;
+            text-indent: 5px;
+        }
+
+        .formula {
+            margin: 0px;
+            margin-top: 100px;
+            margin-left: 150px;
+            height: fit-content;
+            width: fit-content;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+
+        .in {
+            width: 300px;
+            font-family: fantasy;
+            margin: 10px;
+            height: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .quote {
+            display: block;
+            font-size: 40px;
+            text-align: center;
+            color: rgba(255, 208, 0, 0.737);
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .formula textarea {
+            font-family: fantasy;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <span>
+                Call Us: 0900-78601
+            </span>
+            <div class="social-icons"><img src="/Html-CSS-Projects/social icons.JPG" alt="social-icons" height="20px">
+            </div>
+        </div>
+        <div class="logo">
+            <div class="title">
+                <img src="/Html-CSS-Projects/logo.JPG" alt="" class="logo">
+                <span class="title">
+                    Builders Landing Page
+                </span><br>
+                <span class="motto">Landing Page for builders</span>
+            </div>
+            <div class="phone-details">
+                <span class="call-us">
+                    Phone Number
+                </span> <br>
+                <span class="phone">
+                    0900-78601
+                </span>
+            </div>
+            <div class="email-det">
+                <span class="email-us">Email Us At</span> <br>
+                <span class="email">
+                    builders@gmail.com
+                </span>
+            </div>
+            <nav class="navbar">
+                <ul class="navlist">
+                    <li class="item" id="item1">Home</li>
+                    <li class="item" id="item2">Theme Info</li>
+                    <li class="item" id="item3">Blog</li>
+                    <li class="item" id="item4">Our Services</li>
+                    <li class="item" id="item5">Contact</li>
+                    <li class="item" id="item6">Get Quote</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+
+        <p class="des">
+            <span class="head">
+                This is what we do!
+            </span><br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis veniam quae atque ea alias magnam
+            illum amet enim beatae accusamus porro, repudiandae molestias dignissimos at tenetur aliquam ipsa non
+            distinctio quidem.
+        </p>
+        <div class="formula">
+            <span class="quote">Get a Quote</span> <br>
+            <span>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Maxime, nulla.</span>
+            <form action="#" method="get">
+                <input type="text" name="fname" class="in" placeholder="First Name"><br>
+                <input type="text" name="lname" class="in" placeholder="Last Name"><br>
+                <textarea name="free" id="text" cols="30" rows="10" placeholder="Enter Description"></textarea>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

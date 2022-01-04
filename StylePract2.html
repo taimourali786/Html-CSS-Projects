@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSheet2</title>
+    <style>
+        header {
+            font-size: 20px;
+            color: rgb(3, 85, 3);
+            margin: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav {
+            border: green 2px solid;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        .item {
+            list-style: none;
+            display: inline;
+            margin: 0px;
+            margin-bottom: 10px;
+            padding: 10px;
+            color: honeydew;
+            background-color: gray;
+            font-weight: 1000;
+            border-radius: 4px;
+        }
+        .main{
+            text-align: center;
+            border:2px solid seagreen;
+        
+        }
+        .main p{
+            font-size: 23px;
+            padding: 10px;
+            color:rgb(3, 85, 3);
+        }
+        .main span{
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(3, 85, 3);
+            
+        }
+        .form1{
+            margin-left: 80%;        }
+        .form1 *{
+            margin: 5px;
+        }
+        .form1 fieldset{
+            width: fit-content;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <header>
+            <h1 style="margin:0px;"> Welcome To Page</h1>
+            <p style="margin:0px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </header>
+        <section class="nav">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contact Us</li>
+                <li class="item">Blog</li>
+            </ul>
+        </section>
+        <section class="main">
+            <span>
+                This is the main content.
+            </span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, necessitatibus libero. Ab quas
+                recusandae odio aspernatur perferendis cum, suscipit doloremque consequuntur. Earum eos omnis ipsum
+                minima repudiandae unde velit expedita voluptatum esse, delectus dolores et quibusdam fugit quia
+                blanditiis quam deleniti, quisquam nulla facilis eaque dolorem. Dolores debitis numquam sint.
+            </p>
+        </section>
+        <section class="form1">
+            <form action="#">
+                <fieldset style="border: 2px solid springgreen;">
+                    <legend style="color: teal; font-size: 20px;">Contact Us</legend>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your name here"><br>
+
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" name="lname" id="lnamae" placeholder="Enter your last name Here"><br>
+                    <label for="fr">Enter your thought</label><br>
+                    <input type="textarea" name="fr" id="fr" placeholder="how ypu feel!"><br>
+                    <label for="range"> Rate us</label>
+                    <input type="range" name="range" id="range" min="1" max="10"> <br>
+
+                    <input type="submit" name="sub" id="sub">
+                    
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</body>
